@@ -8,10 +8,20 @@
  * Controller of the demoApp
  */
 angular.module('demoApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+  	$scope.showContent = false;
+  	$scope.showDiv = function(){
+  		$scope.showContent = true;
+  	}
+  	$scope.showCostIdInfo = false;
+  	$scope.showInfo = function(){
+  		$scope.showCostIdInfo = true;
+  	}
+  	$scope.hideInfo = function(){
+  		$scope.showCostIdInfo = false;
+  	}
+  	$scope.hideDiv = function(){
+  		$scope.showContent = false;
+  	}
+
   });

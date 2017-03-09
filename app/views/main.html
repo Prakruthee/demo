@@ -1,23 +1,152 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class="row">
+  <div class="col-sm-2">
+    <ul style="list-style-type: none; color: #FBB03B; font-size: 16px; padding: 10px;">
+      <li>Terms & Conditons</li>
+      <li>FAQs</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="col-sm-9" style="background-color: #ffffff;">
+    <form class="form-horizontal" style="margin: 3em 0em;">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Full Name:</label>
+        <div class="col-sm-3">
+          <input type="email" class="form-control"  placeholder="First Name">
+        </div>
+        <div class="col-sm-3">
+          <input type="email" class="form-control"  placeholder="Middle Name">
+        </div>
+        <div class="col-sm-3">
+          <input type="email" class="form-control"  placeholder="Last Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email ID:</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:0px;">
+        <label class="control-label col-sm-2" for="pwd">Social Security Number (SSN):</label>
+        <div class="col-sm-4">          
+          <input type="text" class="form-control" ng-click="showDiv()" ng-blur="hideDiv()">
+        </div>
+        <div class="col-sm-6" ng-show="showContent">          
+          <p style="margin-bottom:0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Date of Birth: </label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+      <div class="form-group"> 
+        <label class="control-label col-sm-2">Have you invested with us before: </label>
+        <div class="col-sm-3">
+          <div class="checkbox">
+            <label style="font-size: 1.2em">
+                <input type="checkbox" value="" checked>
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                Yes 
+            </label> <br><br>
+            <label style="font-size: 1.2em">
+                <input type="checkbox" value="" >
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                No
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          <label class="control-label">Customer ID:</label>
+          <input type="text" class="form-control abc" style="float: right; width: 60%;" ng-click="showInfo()" ng-blur="hideInfo()">
+        </div>
+        <div class="col-sm-3" ng-show="showCostIdInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.</div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Residential Address: </label>
+        <div class="col-sm-5">
+          <input type="email" class="form-control"> <br>
+          <input type="email" class="form-control"> <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <input type="email" class="form-control"> <br>
+        </div>
+        <div class="col-sm-1">
+          <input type="email" class="form-control"> <br>
+        </div>
+        <div class="col-sm-2">
+          <input type="email" class="form-control"> <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Phone Number: </label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control">
+        </div>
+      </div>
+      <div class="form-group"> 
+        <label class="control-label col-sm-5" style="text-align: left;">Is Mailing Address same as Residential Address: </label>
+        <div class="col-sm-3">
+          <div class="checkbox">
+            <label style="font-size: 1.2em">
+                <input type="checkbox" value="" checked>
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                Yes
+            </label><br><br>
+            <label style="font-size: 1.2em">
+                <input type="checkbox" value="" >
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                No
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Mailing Address: </label>
+        <div class="col-sm-5">
+          <input type="email" class="form-control"> <br>
+          <input type="email" class="form-control"> <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <input type="email" class="form-control"> <br>
+        </div>
+        <!-- <div class=""> -->
+          <div class="col-sm-1 dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">state
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">AL</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CA</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ZN</a></li>
+            </ul>
+          </div>
+        <!-- </div> -->
+        <div class="col-sm-2">
+          <input type="email" class="form-control"> <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Phone Number: </label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control">
+        </div>
+      </div>
+      <div class="form-group" style="margin-top: 4em;">        
+        <div class="col-sm-offset-4 col-sm-8">
+          <button type="submit" class="btn btn-default back-button">Back</button>
+          <button type="submit" class="btn btn-default back-button" style="background-color: #FBB03B;">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-1"></div>
 </div>
